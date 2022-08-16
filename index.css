@@ -1,0 +1,33 @@
+ul{
+    list-style-type:none;
+}
+th{
+    float: left;
+}
+td{
+    border: 1px solid;
+}
+
+
+#watch{
+    width:300px;
+    background-color: grey;
+    text-align: center;
+    margin:10px;
+    padding: 10px;
+}
+span{
+    align-content: center;
+    text-align: center;
+}
+button{
+  align-items: center;
+}
+#form{
+  margin:15px;
+  border:1x solid black;
+}
+#formContainer input[type=text]{
+  margin:10px;
+}
+submitInfo
