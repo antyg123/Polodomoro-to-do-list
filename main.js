@@ -25,15 +25,21 @@ function start(){
     if (seconds>1){
       seconds--;
       appendSeconds.innerText = seconds;
+     
+      if(seconds<10){
+        appendSeconds.innerText = "0" + seconds;}
       }
     
       else if (seconds<=1){
         seconds = 59;
         appendSeconds.innerText = seconds;
         minutes--;
-        appendMinutes.innerText = minutes;}
+        appendMinutes.innerText = minutes;
+        if(minutes<10){
+          appendMinutes.innerText = "0" + minutes;}
+      }
   }
-  }
+}
 
 
 function stop(){
@@ -43,11 +49,8 @@ function stop(){
 function reset(){
   seconds = 59;
   minutes = 24;
-  hours = 0;
-  appendSeconds.innerText = "0";
-  appendMinutes.innerText = "0";
-  appendHours.innerText = "0";
-  
+  appendSeconds.innerText = "59";
+  appendMinutes.innerText = "24";
 }
 
 function save(){
