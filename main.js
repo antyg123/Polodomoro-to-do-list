@@ -59,10 +59,27 @@ function save(){
   appendTotalTime.innerText = totalTime;
 }
 
+var li = document.getElementsByTagName("li");
+li.onClick.style.textDecoration = "strikethrough";
 
 
 /*
 RANDOM BLOCKS OF CODE
+
+Function for when a list item is clicked:
+1. list item is clicked
+2. function is initiated
+3. find the list item that is clicked
+4. put a strike through it
+
+
+
+document.addEventListener(click, function(ev){
+  if(ev.target.tagName = "Li"){
+    ev.target.style.textDecoration = "strikethrough";
+  }
+})
+
 
 
 if (appendSeconds == 57, appendMinutes == 24){
