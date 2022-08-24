@@ -1,5 +1,12 @@
+.page{
+  width:400px;
+  border:1px solid black;
+  border-radius:12px;
+  background-color:#FF6F61;
+}
 ul{
-    list-style-type:none;
+    list-style-type:check;
+    color:white;
 }
 th{
     float: left;
@@ -11,26 +18,42 @@ td{
 
 #watch{
     width:300px;
-    background-color: grey;
     text-align: center;
-    margin:10px;
-    padding: 10px;
+    margin:auto;
+    padding: 20px;
 }
 span{
     align-content: center;
     text-align: center;
+    font-size: 36px;
+    font-family: sans-serif;color: white;
 }
 button{
   align-items: center;
+  border:none;
+  font-size:16px;
+  text-decoration:none;
+  font-family:sans-serif;
+  background-color:white;
+  color:#FF6F61;
+  transition-duration:0.5s;
+  border-radius:12px;
+  padding:10px;
+  font-weight:bold;
 }
-#form{
-  margin:15px;
-  border:1x solid black;
+button:hover{
+  color:white;
+  background-color:#FF6F61;
 }
-#formContainer input[type=text]{
-  margin:10px;
+button:active{
+  transform: translateY(4px);
 }
-submitInfo
-#title{
+#toDo{
+  width:300px;
+  border:1px solid;
+  margin: auto;
+}
+h1 {
   text-align:centre;
+  color:white;
 }
