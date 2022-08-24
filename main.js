@@ -37,6 +37,7 @@ function start(){
         appendMinutes.innerText = minutes;
         if(minutes<10){
           appendMinutes.innerText = "0" + minutes;}
+        
       }
   }
 }
@@ -57,7 +58,19 @@ function save(){
   totalTime = seconds + minutes + hours;
   appendTotalTime.innerText = totalTime;
 }
+
+
+
 /*
+RANDOM BLOCKS OF CODE
+
+
+if (appendSeconds == 57, appendMinutes == 24){
+  function alarm(){
+    window.alert("Time is up");}
+  }
+
+
 function start(){
   var x = document.getElementById("seconds");
   x.innerText = "6";
