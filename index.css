@@ -4,6 +4,10 @@
   border-radius:12px;
   background-color:#FF6F61;
 }
+#time{
+  border: 5px solid white;
+  border-radius: 12px;
+}
 ul{
     list-style-type:check;
     color:white;
@@ -56,4 +60,26 @@ button:active{
 h1 {
   text-align:centre;
   color:white;
+}
+#submitButton{
+  border:none;
+  font-size:16px;
+  text-decoration:none;
+  font-family:sans-serif;
+  background-color:white;
+  color:#FF6F61;
+  transition-duration:0.5s;
+  border-radius:12px;
+  padding:10px;
+  font-weight:bold;
+}
+#submitButton:hover{
+  color:white;
+  background-color:#FF6F61;
+}
+#submitButton:active{
+  transform: translateY(4px);
+}
+#submitText{
+  font-size:16px;
 }
