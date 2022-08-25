@@ -59,10 +59,20 @@ function save(){
   appendTotalTime.innerText = totalTime;
 }
 
-var li = document.getElementsByTagName("li");
-li.onClick.style.textDecoration = "strikethrough";
 
 
+const li = document.getElementsByTagName("li");
+for (var i = 0 ; i < comment.length; i++) {
+   comment[i].addEventListener('click' , showComment , false ) ; 
+    li.addEventListener("click", itemClicked);
+}
+
+function itemClicked(){
+  li.style.textDecoration = "strikethrough";
+}
+
+const aButton = document.getElementById("aButton");
+aButton.onClick(window.alert("here"));
 /*
 RANDOM BLOCKS OF CODE
 
