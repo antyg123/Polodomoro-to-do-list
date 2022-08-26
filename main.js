@@ -1,6 +1,6 @@
 //TO-DO-LIST
 var addButton = document.getElementById('submitButton');
-var list = document.querySelector('.list')
+//var list = document.querySelector('.list')
 addButton.addEventListener('click', function(){
     var newItem = document.createElement("li");
     var newContent = document.getElementById("submitText").value;
@@ -61,20 +61,30 @@ function save(){
 
 
 
-const li = document.getElementsByTagName("li");
-for (var i = 0 ; i < comment.length; i++) {
-   comment[i].addEventListener('click' , showComment , false ) ; 
-    li.addEventListener("click", itemClicked);
-}
+/*
 
+//function to be performed when the item is clicked on
 function itemClicked(){
   li.style.textDecoration = "strikethrough";
 }
 
-const aButton = document.getElementById("aButton");
-aButton.onClick(window.alert("here"));
-/*
+//Find the li within a range of li's 
+//scan through the possibilities to find the right one
+
+
+
+
 RANDOM BLOCKS OF CODE
+
+FUNCTION FOR SORTING THROUGH A LIST THAT WAS COPIED IN ORDER TO TRY TO IMPLEMENT IT WITH THE LIST ITEM STRIKETHROUGH FUNCTION
+
+const list = document.getElementById("list");
+var listItem = document.getElementsByTagName("li");
+for (var i = 0 ; i < list.length; i++) {
+   comment[i].addEventListener('click' , showComment , false ) ; 
+    li.addEventListener("click", itemClicked);
+}
+
 
 Function for when a list item is clicked:
 1. list item is clicked
