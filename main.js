@@ -1,12 +1,18 @@
-//TO-DO-LIST
 var addButton = document.getElementById('submitButton');
-//var list = document.querySelector('.list')
+//ADD BUTTON
 addButton.addEventListener('click', function(){
     var newItem = document.createElement("li");
+    var newX = document.createElement("button");
+    newX.id = "xButton";
     var newContent = document.getElementById("submitText").value;
-    newItem.innerText = newContent;   document.getElementById("list").appendChild(newItem);
+    newItem.innerText = newContent;
+    document.getElementById("list").appendChild(newItem);
+    newItem.appendChild(newX);
     newContent = "";
 });
+
+//Append delete button to list item
+
 
 
 //TIMER
@@ -16,9 +22,10 @@ var appendSeconds = document.getElementById("seconds");
 var appendMinutes = document.getElementById("minutes");
 var totalTime = 0;
 var appendTotalTime = document.getElementById("totalTime");
-
+//START BUTTON
 function start(){
   increaseNumber = setInterval(printX, 1000);
+  document.getElementById("start").disabled = true;
   //this function will execute every second
   function printX(){
     
@@ -42,11 +49,13 @@ function start(){
   }
 }
 
-
+//STOP BUTTON
 function stop(){
   clearInterval(increaseNumber);
+  document.getElementById("start").disabled = false;
 }
 
+//RESET BUTTON
 function reset(){
   seconds = 59;
   minutes = 24;
@@ -54,20 +63,24 @@ function reset(){
   appendMinutes.innerText = "24";
 }
 
-function save(){
-  totalTime = seconds + minutes + hours;
-  appendTotalTime.innerText = totalTime;
-}
-
+//Remove an item that is clicked
+document.addEventListener('click', function handleClick(event) {
+  if (event.target.tagName === "LI"){
+    console.log(event.target);
+    event.target.remove();
+  }
+});
 
 
 /*
-
 //function to be performed when the item is clicked on
 function itemClicked(){
   li.style.textDecoration = "strikethrough";
 }
 
+//Create an array that stores the li values
+
+//
 //Find the li within a range of li's 
 //scan through the possibilities to find the right one
 
