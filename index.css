@@ -12,13 +12,10 @@ ul{
     list-style-type:none;
     color:white;
 }
-button, #xButton{
-  color:blue;
+li:hover{
+  color:black;
+  curser: pointer;
 }
-#xButton:hover{
-  color:red;
-}
-
 th{
     float: left;
 }
@@ -59,7 +56,6 @@ button:active{
 }
 #toDo{
   width:300px;
-  border:1px solid;
   margin: auto;
 }
 h1 {
@@ -77,6 +73,9 @@ h1 {
   border-radius:12px;
   padding:10px;
   font-weight:bold;
+}
+#remove{
+  color:white;
 }
 #submitButton:hover{
   color:white;
