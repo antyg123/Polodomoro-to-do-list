@@ -1,4 +1,4 @@
-.page{
+.app{
   width:400px;
   border:1px solid black;
   border-radius:12px;
@@ -9,17 +9,22 @@
   border-radius: 12px;
 }
 ul{
-    list-style-type:check;
+    list-style-type:none;
     color:white;
 }
+button, #xButton{
+  color:blue;
+}
+#xButton:hover{
+  color:red;
+}
+
 th{
     float: left;
 }
 td{
     border: 1px solid;
 }
-
-
 #watch{
     width:300px;
     text-align: center;
