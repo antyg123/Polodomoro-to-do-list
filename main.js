@@ -2,12 +2,9 @@ var addButton = document.getElementById('submitButton');
 //ADD BUTTON
 addButton.addEventListener('click', function(){
     var newItem = document.createElement("li");
-    var newX = document.createElement("button");
-    newX.id = "xButton";
     var newContent = document.getElementById("submitText").value;
     newItem.innerText = newContent;
     document.getElementById("list").appendChild(newItem);
-    newItem.appendChild(newX);
     newContent = "";
 });
 
